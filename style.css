@@ -1,0 +1,420 @@
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffb300;
+    padding: 1.5rem 1rem;
+}
+
+#searchButton {
+    width: 18rem;
+}
+
+.inputSearchBar {
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgba(99, 99, 99, 0.627);
+    width: 100%;
+    height: 100%;
+}
+
+.inputSearchBar>div {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 179, 0);
+    padding-top: 1.6rem;
+    width: 15rem;
+}
+
+.inputSearchBar>div>input {
+    border: 0;
+    padding: 0.1rem 0.5rem 0.1rem 0.5rem;
+    height: 1.5rem;
+    width: 99%;
+    z-index: 1;
+}
+
+.inputSearchBar>div>button {
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 0;
+    background-color: white;
+    height: 1.7rem;
+    width: 2rem;
+}
+
+.inputSearchBar>div>button:hover {
+    color: rgb(116, 116, 116);
+}
+
+.inputSearchBar>div>button:active {
+    color: rgb(0, 0, 0);
+}
+
+#searchButton>button {
+    font-size: 1.3rem;
+    background-color: transparent;
+    padding: 0.1rem 0.4rem;
+    border: none;
+    cursor: pointer;
+}
+
+#searchButton>button:hover {
+    color: rgb(101, 101, 101);
+}
+
+#searchButton>button:active {
+    color: rgba(24, 24, 24, 0.848);
+}
+
+.logo {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.logo>img {
+    width: 3.5rem;
+    clip-path: circle();
+    border: 1px solid black;
+    border-radius: 100%;
+}
+
+.logo>h3 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 100;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.linksHeader {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 18rem;
+}
+
+.linksHeader>div {
+    display: flex;
+    align-items: center;
+}
+
+#inLive {
+    color: transparent;
+    font-size: 0.7rem;
+    margin-right: 0.2rem;
+}
+
+.linksHeader>div>a {
+    font-size: 11pt;
+    font-family: "Lexend Deca", serif;
+}
+
+.linksHeader>a {
+    font-size: 11pt;
+    font-family: "Lexend Deca", serif;
+}
+
+.linksHeader>a:nth-child(2) {
+    margin: 0 0.5rem 0 0.5rem;
+    border-left: 1px solid black;
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.linksHeader>a:hover, .linksHeader>div>a:hover {
+    color: rgb(128, 128, 128);
+}
+
+.linksHeader>a:active, .linksHeader>div>a:active {
+    color: rgb(35, 35, 35);
+}
+
+.mobileLinksHeader {
+    display: none;
+    align-items: center;
+}
+
+.mobileLinksHeader>i {
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.mobileLinksHeader>i:hover {
+    color: rgb(142, 142, 142);
+}
+
+.mobileLinksHeader>i:active {
+    color: rgb(100, 100, 100);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0 5rem 0;
+}
+
+.textTitle {
+    width: 38rem;
+}
+
+.textTitle>p {
+    font-family: "Lexend Deca", serif;
+}
+
+.textTitle>h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.textTitle>h4 {
+    font-family: "Merriweather", serif;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageText>img {
+    border: 1px solid black;
+    width: 38rem;
+}
+
+.imageText>p {
+    text-align: center;
+    font-family: "Lexend Deca", serif;
+    font-size: 11pt;
+}
+
+.mainText>p {
+    font-family: "Lexend Deca", serif;
+    font-size: 12pt;
+    width: 38rem;
+}
+
+.writerProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 38rem;
+    gap: 1rem;
+    margin: 4rem 0 0 0;
+}
+
+.writerProfile>img {
+    width: 6rem;
+    clip-path: circle();
+}
+
+.writerProfile>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.writerProfile>div>h4 {
+    font-family: "Open Sans", serif;
+    text-align: center;
+    margin: 0 0 0.3rem 0;
+}
+
+.writerProfile>div>p {
+    font-family: "Lexend Deca", serif;
+    text-align: center;
+    font-size: 10pt;
+    margin: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: rgb(255, 179, 0);
+}
+
+footer>h3 {
+    font-size: 1.5rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 100;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.footerLinks, .socialWides {
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.footerLinks>p>a {
+    font-size: 11pt;
+    font-family: "Lexend Deca", serif;
+}
+
+.footerLinks>p>a:hover {
+    color: rgb(138, 138, 138);
+}
+
+.footerLinks>p>a:active {
+    color: rgb(77, 77, 77);
+}
+
+.socialWides>p>a:hover {
+    color: rgb(133, 133, 133);
+}
+
+.socialWides>p>a:active {
+    color: rgb(72, 72, 72);
+}
+
+#copyright {
+    font-family: "Lexend Deca", serif;
+    font-size: 10pt;
+    margin: 0;
+}
+
+@media (max-width: 850px) {
+    header {
+        padding: 0.8rem 1rem;
+    }
+
+    #searchButton {
+        width: auto;
+    }
+
+    .linksHeader {
+        display: none;
+    }
+
+    .mobileLinksHeader {
+        display: flex;
+    }
+
+    main {
+        margin: 0 0 2rem 0;
+    }    
+    
+    .mainText>p, .textTitle {
+        width: 90%;
+    }
+
+    .textTitle>h2 {
+        font-size: 1.9rem;
+    }
+
+    .imageText>img {
+        width: 90%;
+    }
+
+    .writerProfile {
+        margin: 1rem 0 0 0;
+        width: 90%;
+    }
+
+    .writerProfile>img {
+        width: 4.5rem;
+    }
+}
+
+.menuMobile {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgba(99, 99, 99, 0.627);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menuMobile>section {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgb(255, 179, 0);
+    padding: 1.8rem 1.4rem 0 0;
+    width: 40%;
+    height: 100%;
+}
+
+#closeMenuMobileDiv {
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#closeMenuMobileDiv:hover {
+    color: rgb(152, 152, 152);
+}
+
+#closeMenuMobileDiv:active {
+    color: rgb(105, 105, 105);
+}
+
+#menuMobile {
+    display: none;
+}
+
+.menuMobileInLiveLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1.5rem;
+    margin: 1.6rem 0 1.6rem 0;
+    padding: 1.5rem 0 1.5rem 0;
+    border-bottom: 1px solid rgb(65, 65, 65);
+    border-top: 1px solid rgb(65, 65, 65);
+    width: 90%;
+}
+
+.menuMobileInLiveLinks>div {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+#inLiveMobile {
+    color: transparent;
+    font-size: 0.7rem;
+}
+
+.mobileSocialWides {
+    display: flex;
+    gap: 1rem;
+}
+
+.menuMobileInLiveLinks>div>a, .menuMobileInLiveLinks>a {
+    font-family: "Lexend Deca", serif;
+}
+
+.menuMobileInLiveLinks>div>a:hover, .menuMobileInLiveLinks>a:hover, .mobileSocialWides>p>a:hover {
+    color: rgb(152, 152, 152);
+}
+
+.menuMobileInLiveLinks>div>a:active, .menuMobileInLiveLinks>a:active, .mobileSocialWides>p>a:active {
+    color: rgb(105, 105, 105);
+}
